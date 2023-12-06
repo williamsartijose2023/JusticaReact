@@ -1,0 +1,45 @@
+#catalog-section {
+  padding: 20px 0;
+}
+
+.dsc-catalog-cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+}
+
+.dsc-h2 {
+  color: #333;
+  font-size: 36px;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 33px;
+  word-wrap: break-word
+}
+
+.dsc-mb20 {
+  margin-bottom: 20px;
+}
+
+.dsc-mt20 {
+  margin-top: 20px;
+}
+
+.dsc-light-text {
+  color: #333;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 33px;
+}
+
+.dsc-bold-text {
+  color: #333;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+}
+
