@@ -57,59 +57,7 @@ line-height: 16px;
   border-radius: 8px;
 }
 
-.label {
- color: #161A1D;
 
-font-variant-numeric: lining-nums proportional-nums;
-font-feature-settings: 'ss01' on;
-font-family: Open Sans;
-font-size: 10px;
-font-style: normal;
-font-weight: 600;
-line-height: 22px;
-}
-
-.dot {
-  width: 16px;
-  height: 16px;
-  left: 14px;
-  top: 18px;
-  position: absolute;
-  background: #161A1D;
-}
-
-.time-container {
-  width: 99px;
-  height: 22px;
-  left: 99px;
-  top: 15px;
-  position: absolute;
-}
-
-.time-part {
-  left: 40px;
-  top: 0;
-  position: absolute;
-  text-align: right;
-}
-
-.hour,
-.minute {
-  color: #161A1D;
-  font-size: 16px;
-  font-family: 'Raleway';
-  line-height: 22px;
-  word-wrap: break-word;
-}
-
-.unit {
-  color: #161A1D;
-  font-size: 18px;
-  font-family: 'Raleway';
-  font-weight: 400;
-  line-height: 22px;
-  word-wrap: break-word;
-}
 
 .divider {
   width: 100%;
@@ -121,11 +69,91 @@ line-height: 22px;
 .custom-alert {
   max-width: 400px;
   height: auto;
-  margin-bottom: 15px;
   background-color: #fff;
 }
 
-/* Estilo personalizado para o conteúdo dentro do alerta */
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.dot {
+  width: 16px;
+  height: 25px;
+  flex-shrink: 0;
+  fill: #161A1D;
+}
+
+.time-label {
+  color: #161A1D;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: 'ss01' on;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
 .time-content {
-  padding: 10px;
+  display: flex; /* Torna o conteúdo do tempo um flex container */
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin-left: 10px; /* Espaçamento entre o rótulo e o conteúdo do tempo */
+}
+
+.time-part {
+  color: var(--content-content-primary, #161A1D);
+  text-align: right;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: 'ss01' on;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 137.5% */
+  display: flex; /* Torna a parte do tempo um flex container */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.hour, .minute {
+  color: var(--content-content-primary, #161A1D);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: 'ss01' on;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+  margin-left: 5px; /* Espaçamento entre os números das horas e os minutos */
+}
+
+.user-icon {
+  width: 14px;
+height: 17.499px;
+flex-shrink: 0;
+  fill: #161A1D;
+}
+
+.user-label {
+  color: #161A1D;
+font-size: 10px;
+font-family: Open Sans;
+font-weight: 600;
+line-height: 22px;
+word-wrap: break-word
+  }
+
+.user-part {
+color: #161A1D;
+font-size: 16px;
+font-family: Raleway;
+font-weight: 700;
+line-height: 22px;
+word-wrap: break-word
 }
