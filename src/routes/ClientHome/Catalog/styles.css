@@ -10,11 +10,11 @@
 
 .dsc-h2 {
   color: #333;
-  font-size: 36px;
   font-family: Raleway;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 33px;
-  word-wrap: break-word
+  line-height: 33px; 
 }
 
 .dsc-mb20 {
@@ -42,4 +42,11 @@
   font-weight: 700;
   line-height: 33px;
 }
+.d-flex {
+  display: flex!important;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
 

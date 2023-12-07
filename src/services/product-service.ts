@@ -11,10 +11,11 @@ export function findById(id: number) : ProductDTO | undefined {
 const products : ProductDTO[] = [
     {
         "id": 1,
-        "name": "Lisboa",
+        "name": "Coimbra",
+        "subDescription" : "Conservatória Do Registo Civil, Predial e Comercial", 
         "time": "0h45m",
         "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/1-big.jpg",
-        "description": "Alameda dos Oceanos 13411990-083 Lisboa",
+        "description": "Palácio da Justiça - Praça da República, 3420-307 Tábua",
         "categories": [
             {
                 "id": 1,
@@ -24,10 +25,11 @@ const products : ProductDTO[] = [
     },
     {
        "id": 2,
-       "name": "Porto",
-       "time": "1h27m",
+       "name": "Faro",
+       "subDescription" : "Registo Predial e Comercial", 
+       "time": "0h45m",
        "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/2-big.jpg",
-       "description": "Av. de Fernão de Magalhães 1862, 4350-158",
+       "description": "Palácio da Justiça - Rua Dra. Laura Ayres, 8104-002 Loulé",
        "categories": [
            {
                "id": 2,
@@ -41,10 +43,11 @@ const products : ProductDTO[] = [
     },
     {
         "id": 7,
-        "name": "Coimbra",
-        "time": "0h23m",
+        "name": "Lisboa",
+        "subDescription" : "Registo Civil Predial e Comercial", 
+        "time": "0h45m",
         "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/7-big.jpg",
-        "description": "Palácio da Justiça Praça da República, 3420-307",
+        "description": "Rua Heliodoro Salgado n.º 18, 2630-242 Arruda dos Vinhos",
         "categories": [
             {
                 "id": 2,
@@ -54,10 +57,11 @@ const products : ProductDTO[] = [
      },
     {
         "id": 15,
-        "name": "Faro",
-        "time": "0h30m",
+        "name": "Porto",
+        "subDescription" : "Departamento de Identificação Civil", 
+        "time": "0h45m",
         "imgUrl": "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/15-big.jpg",
-        "description": "Largo Dr. Francisco Sa Carneiro, 8000-151 Faro",
+        "description": "Palacete dos Pestanas, Rua Gonçalo Cristóvão, 371, 4000-260 Porto",
         "categories": [
             {
                 "id": 2,

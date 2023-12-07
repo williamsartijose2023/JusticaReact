@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-start;
   padding: 10px;
+  flex-direction: column;
 }
 
 .dsc-catalog-card-top img {
@@ -10,36 +11,42 @@
 }
 
 .dsc-catalog-card-bottom {
-  padding: 10px 20px;
+  padding: 15px 10px;
   min-height: 110px;
 }
 
-.dsc-catalog-card-bottom h3 {
-  color: var(--dsc-color-font-secondary);
-  font-size: 20px;
-}
 
 .dsc-catalog-card-bottom h4 {
   color: var(--dsc-color-font-primary);
   font-size: 12px;
 }
 
-.dsc-lisboa-h3 {
+.dsc-city-h3 {
   color: #005799;
-  font-size: 22px;
-  font-family: Open Sans;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.22px;
-  word-wrap: break-word;
+font-feature-settings: 'ss01' on;
+font-family: Raleway;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0.22px;
 }
-.dsc-lisboa-p {
-  color: #414e58 !important;
-  font-size: 14px !important;
+.dsc-city-h4 {
+  color: #005799;
   font-family: Raleway;
-  font-weight: 400;
-  line-height: 16px;
-  word-wrap: break-word;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.dsc-city-p {
+  color: #414E58 !important;
+font-family: Raleway;
+font-size: 12px !important;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
 }
 
 .dsc-time-button {
@@ -51,15 +58,15 @@
 }
 
 .label {
-  left: 40px;
-  top: 15px;
-  position: absolute;
-  color: #161A1D;
-  font-size: 10px;
-  font-family: 'Raleway';
-  font-weight: 600;
-  line-height: 22px;
-  word-wrap: break-word;
+ color: #161A1D;
+
+font-variant-numeric: lining-nums proportional-nums;
+font-feature-settings: 'ss01' on;
+font-family: Open Sans;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px;
 }
 
 .dot {
@@ -102,4 +109,23 @@
   font-weight: 400;
   line-height: 22px;
   word-wrap: break-word;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.10);
+}
+
+
+.custom-alert {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+/* Estilo personalizado para o conteúdo dentro do alerta */
+.time-content {
+  padding: 10px;
 }
