@@ -1,6 +1,8 @@
 import "./styles.css";
-import * as productService from '../../../Services/product-service';
 import CatalogCard from "../../../components/CatalogCard";
+import * as productService from "../../../services/product-service";
+
+
 
 export default function Catalog() {
   return (
@@ -14,9 +16,11 @@ export default function Catalog() {
           <span className="dsc-bold-text">Cartão de Cidadão</span>
         </p>
         <div className="dsc-catalog-cards dsc-mb20 dsc-mt20">
-          {productService.findAll().map(
-            product => <CatalogCard key={product.id} product={product} />
-          )}
+        {
+              productService.findAll().map(
+                product => <CatalogCard key={product.id} product={product} />
+              )
+            }
         </div>
       </section>
     </main>

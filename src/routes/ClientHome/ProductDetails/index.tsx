@@ -1,8 +1,8 @@
 import "./styles.css";
-import ButtonInverse from "../../../components/ButtonInverse";
-import ButtonPrimary from "../../../components/ButtonPrimary";
-import ProductDetailsCard from "../../../components/ProductDetailsCard";
-import * as productService from "../../../Services/product-service.ts";
+import ButtonInverse from "../../../components/ButtonInverse/index.tsx";
+import ButtonPrimary from "../../../components/ButtonPrimary/index.tsx";
+import ProductDetailsCard from "../../../components/ProductDetailsCard/index.tsx";
+import * as productService from "../../../services/product-service";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
