@@ -43,6 +43,13 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 576px) {
+  .dsc-section-title {
+    text-align: left;
+    font-size: 24px;
+  }
+}
+
 /*-----------------------------------------------------------------*/
 /* header styles */
 
@@ -63,6 +70,11 @@ header {
   }
 }
 
+@media (min-width: 576px) {
+  .dsc-btn-page-container {
+    width: 220px;
+  }
+}
 /*-----------------------------------------------------------------*/
 /* card styles */
 
@@ -78,6 +90,12 @@ header {
   }
 }
 
+@media (min-width: 576px) {
+  .dsc-section-title {
+    text-align: left;
+    font-size: 24px;
+  }
+}
 @media (min-width: 992px) {
   .dsc-table tbody {
     font-size: 16px;

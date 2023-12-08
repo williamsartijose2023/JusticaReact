@@ -1,6 +1,7 @@
 import FaRegClock from "../../assets/FaRegClock.svg";
 import FaRegUser from "../../assets/FaRegUser.svg";
 import dividerImg from "../../assets/Divider.svg";
+import Rectangle from "../../assets/Rectangle.svg";
 import { Link } from 'react-router-dom';
 import { ProductDTO } from '../../models/product';
 import './styles.css';
@@ -53,6 +54,9 @@ export default function CatalogCard({ product }: Props) {
             <span className="number">32</span>
           </div>
         </div>
+        <div className="rectangle-icon">
+              <img src={Rectangle} alt="Rectangle" />
+            </div>
       </div>
       </div>
         </div>
