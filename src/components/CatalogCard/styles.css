@@ -1,71 +1,55 @@
-.dsc-catalog-card-top {
-  display: flex;
-  justify-content: flex-start;
-  padding: 10px;
-  flex-direction: column;
+/* Catalog Card Component */
+.dsc-catalog-card {
+  width: 232px;
+  height: 353px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f9fafb;
+  border-radius: 4px;
+  overflow: hidden;
 }
-
-.dsc-catalog-card-top img {
-  width: 150px;
-  height: 150px;
-}
-
 .dsc-catalog-card-bottom {
-  padding: 15px 10px;
+  padding: 16px 4px;
   min-height: 110px;
-}
-
-
-.dsc-catalog-card-bottom h4 {
-  color: var(--dsc-color-font-primary);
-  font-size: 12px;
 }
 
 .dsc-city-h3 {
   color: #005799;
-font-feature-settings: 'ss01' on;
-font-family: Raleway;
-font-size: 22px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0.22px;
+  font-size: 22px;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.22px;
+  word-wrap: break-word;
 }
 .dsc-city-h4 {
   color: #005799;
-  font-family: Raleway;
   font-size: 14px;
-  font-style: normal;
+  font-family: Raleway;
   font-weight: 600;
   line-height: 18px;
+  word-wrap: break-word;
+  width: 210px;
+  height: 36px;
+  padding-right: 3px;
 }
 
 .dsc-city-p {
-  color: #414E58 !important;
-font-family: Raleway;
-font-size: 12px !important;
-font-style: normal;
-font-weight: 400;
-line-height: 16px;
+  color: #414e58;
+  font-size: 12px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
 }
 
 .dsc-time-button {
   width: 100%;
   height: 100%;
   position: relative;
-  background: #F0AC0F !important;
+  background: #f0ac0f !important;
   border-radius: 8px;
 }
-
-
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.10);
-}
-
-
 .custom-alert {
   max-width: 400px;
   height: auto;
@@ -74,24 +58,24 @@ line-height: 16px;
 
 .alert {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   align-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
 }
 
-.dot {
+.dsc-iconclock img {
   width: 16px;
   height: 25px;
   flex-shrink: 0;
-  fill: #161A1D;
+  fill: #161a1d;
 }
 
 .time-label {
-  color: #161A1D;
+  color: #161a1d;
   font-variant-numeric: lining-nums proportional-nums;
-  font-feature-settings: 'ss01' on;
+  font-feature-settings: "ss01" on;
   font-family: Open Sans;
   font-size: 10px;
   font-style: normal;
@@ -108,10 +92,10 @@ line-height: 16px;
 }
 
 .time-part {
-  color: var(--content-content-primary, #161A1D);
+  color: var(--content-content-primary, #161a1d);
   text-align: right;
   font-variant-numeric: lining-nums proportional-nums;
-  font-feature-settings: 'ss01' on;
+  font-feature-settings: "ss01" on;
   font-family: Raleway;
   font-size: 16px;
   font-style: normal;
@@ -121,10 +105,11 @@ line-height: 16px;
   align-items: center; /* Centraliza os itens verticalmente */
 }
 
-.hour, .minute {
-  color: var(--content-content-primary, #161A1D);
+.hour,
+.minute {
+  color: var(--content-content-primary, #161a1d);
   font-variant-numeric: lining-nums proportional-nums;
-  font-feature-settings: 'ss01' on;
+  font-feature-settings: "ss01" on;
   font-family: Raleway;
   font-size: 16px;
   font-style: normal;
@@ -132,28 +117,63 @@ line-height: 16px;
   line-height: 22px; /* 137.5% */
   margin-left: 5px; /* Espaçamento entre os números das horas e os minutos */
 }
+.dsc-divider img {
+  width: 100%;
+  height: 100%;
+  border: 1px dotted rgba(0, 0, 0, 0.1);
+}
 
-.user-icon {
+.user-icon img {
   width: 14px;
-height: 17.499px;
-flex-shrink: 0;
-  fill: #161A1D;
+  height: 17.499px;
+  flex-shrink: 0;
+  fill: #161a1d;
 }
 
 .user-label {
-  color: #161A1D;
-font-size: 10px;
-font-family: Open Sans;
-font-weight: 600;
-line-height: 22px;
-word-wrap: break-word
-  }
+  color: #161a1d;
+  font-size: 10px;
+  font-family: Open Sans;
+  font-weight: 600;
+  line-height: 22px;
+  word-wrap: break-word;
+}
 
 .user-part {
-color: #161A1D;
-font-size: 16px;
-font-family: Raleway;
-font-weight: 700;
-line-height: 22px;
-word-wrap: break-word
+  color: #161a1d;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+.number {
+  color: #161a1d;
+  word-wrap: break-word;
+  text-align: right;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "ss01" on;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.letter {
+  color: #161a1d;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 400;
+  line-height: 22px;
+  word-wrap: break-word;
+}
+
+.card {
+  width: 258px;
+  height: 351px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f9fafb;
 }

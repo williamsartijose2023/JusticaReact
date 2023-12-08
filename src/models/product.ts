@@ -5,6 +5,6 @@ export type ProductDTO = {
   subDescription: string;
   description: string;
   time: string ;
-  imgUrl: string;
+  timePerson: string;
   categories: CategoryDTO[];
 };
